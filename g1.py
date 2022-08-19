@@ -8,6 +8,7 @@ print(" 5 for Parabola ")
 print("6. for substraction")
 print("7. for addition")
 print("8. for multiplication")
+print("9. for division")
 p=int(input("Enter the operation"))
 if p>8:
     print("Invalid")
@@ -229,4 +230,29 @@ match p:
             print(q,',',end="") 
         print('\n',v)
         c=r*f
+        print(c)
+    case 9:
+        q=int(input("Enter the number of inputs you want"))
+        a=[]
+        b=[]
+        v=0
+        f=0
+        r=0
+        t=0
+        for t in range(q):
+            t=float(input("Enter the first element"))
+            a.append(t)
+            r=r+t
+        print(r)
+        for u in range(q):
+            u=float(input("Enter the second element"))
+            b.append(u)
+            f=f+u
+        print(f)
+        for g,w in zip(a,b):
+            q=float(g)/float(w)
+            v=v+q
+            print(q,',',end="") 
+        print('\n',v)
+        c=r/f
         print(c)
