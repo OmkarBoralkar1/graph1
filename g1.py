@@ -10,7 +10,7 @@ print("7. for addition")
 print("8. for multiplication")
 print("9. for division")
 p=int(input("Enter the operation"))
-if p>8:
+if p>9:
     print("Invalid")
 match p:
     case 1 :
