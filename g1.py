@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from cmath import pi
 print(" 1 for slope form")
 print(" 2 for point form")
 print(" 3 for circle")
@@ -106,7 +107,7 @@ match p:
                     plt.title("Parabola along +ve X axis")
                     plt.show()
                 if c<0:
-                    (x)=-((y-p)**2)/(4*a)+c
+                    (x)=(-(y-p)**2)/(4*a)+c
                     plt.plot(x,y)
                     plt.title("Parabola along +ve X axis")
                     plt.show()
@@ -123,7 +124,7 @@ match p:
                             plt.title("Parabola along +ve X axis")
                             plt.show()
                         case 2:
-                            (x)=-((y-p)**2)/(4*a)+c
+                            (x)=(-(y-p)**2)/(4*a)+c
                             plt.plot(x,y)
                             plt.title("Parabola along -ve X axis")
                             plt.show()
@@ -131,8 +132,8 @@ match p:
                 a=float(input("Enter the value of a"))
                 c=float(input("Enter the value of x intercept"))
                 p=float(input("Enter the value of y intercept"))
-                x=np.linspace(-2,0,20)
-                if p>0:
+                x=np.linspace(-2,10,20)
+                if p>0: 
                     (y)=(((x-c)**2)/(4*a))+p
                     plt.plot(x,y)
                     plt.title("Parabola along +ve Y axis")
@@ -146,19 +147,19 @@ match p:
                     print("1. +ve along y axis")
                     print("2. -ve along y axis")
                     j=int(input("Enter the operation"))
-                if j>2 :
-                    print("Invalid")
-                match j:
-                    case 1:
-                        (y)=((x-c)**2)/(4*a)+p
-                        plt.plot(x,y)
-                        plt.title("Parabola along +ve Y axis")
-                        plt.show()
-                    case 2:
-                        (y)=-((x-c)**2)/(4*a)+p
-                        plt.plot(x,y)
-                        plt.title("Parabola along +ve Y axis")
-                        plt.show()
+                    if j>2 :
+                        print("Invalid")
+                    match j:
+                        case 1:
+                            (y)=((x-c)**2)/(4*a)+p
+                            plt.plot(x,y)
+                            plt.title("Parabola along +ve Y axis")
+                            plt.show()
+                        case 2:
+                            (y)=-((x-c)**2)/(4*a)+p
+                            plt.plot(x,y)
+                            plt.title("Parabola along +ve Y axis")
+                            plt.show()
     case 6:
         q=int(input("Enter the number of inputs you want"))
         a=[]
