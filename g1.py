@@ -109,7 +109,7 @@ match p:
                 if c<0:
                     (x)=(-(y-p)**2)/(4*a)+c
                     plt.plot(x,y)
-                    plt.title("Parabola along +ve X axis")
+                    plt.title("Parabola along -ve X axis")
                     plt.show()
                 if c==0:
                     print("1. +ve along x axis")
@@ -141,7 +141,7 @@ match p:
                 if p<0:
                     (y)=-((x-c)**2)/(4*a)+p
                     plt.plot(x,y)
-                    plt.title("Parabola along +ve Y axis")
+                    plt.title("Parabola along -ve Y axis")
                     plt.show()
                 if p==0:
                     print("1. +ve along y axis")
@@ -158,7 +158,7 @@ match p:
                         case 2:
                             (y)=-((x-c)**2)/(4*a)+p
                             plt.plot(x,y)
-                            plt.title("Parabola along +ve Y axis")
+                            plt.title("Parabola along -ve Y axis")
                             plt.show()
     case 6:
         q=int(input("Enter the number of inputs you want"))
