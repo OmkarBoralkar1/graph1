@@ -257,3 +257,5 @@ match p:
         print('\n',v)
         c=r/f
         print(c)
+
+        print("omkar you are stupid ")
